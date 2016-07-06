@@ -29,9 +29,6 @@
 		]
 	},
 	"scripts": {
-		"post-install-cmd": [
-			"cd frontend && php artisan optimize"
-		],
 		"post-update-cmd": [
 			"php artisan clear-compiled",
             "php artisan ide-helper:generate",
