@@ -158,11 +158,11 @@
                         <h3 class="panel-title">PHP Dependencies</h3>
                     </div>
                     <?php
-                        $composer_contents = file_get_contents("../composer.json");
+                        $composer_contents = file_get_contents("../../composer.json");
                         $composer_contents = json_decode($composer_contents);
                         $composer_contents = $composer_contents->{"require"};
 
-                        $installed_composer = file_get_contents("../composer.lock");
+                        $installed_composer = file_get_contents("../../composer.lock");
                         $installed_composer = json_decode($installed_composer);
                         $installed_composer = $installed_composer->{"packages"};
 
