@@ -14,7 +14,7 @@ define('LARAVEL_START', microtime(true));
 |
 */
 
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__.'/vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -69,7 +69,7 @@ Illuminate\Support\ClassLoader::register();
 |
 */
 
-if (is_dir($workbench = __DIR__.'/../workbench'))
+if (is_dir($workbench = __DIR__.'/workbench'))
 {
 	Illuminate\Workbench\Starter::start($workbench);
 }
